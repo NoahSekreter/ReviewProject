@@ -1,0 +1,68 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #001A00;
+    background-image: url('../Images/Shoggoth.jpg');
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #001A00;
+    color: #2BCC2B;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input, select, textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    background-color: #000F00;
+}
+
+.jumbotron {
+    background-color: #004400;
+}
+
+.btn{
+    background-color: #004400;
+    color: #4EFF4E;
+}
+
+.btn:hover {
+    background-color: #4EFF4E;
+    color: #001A00;
+}
+
+.thumbnail {
+    text-align: center;
+    background-color: #102E10;
+    border-color: #000F00;
+    margin-bottom: 25px;
+}
+
+.thumbnail:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #38EE38;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4EFF4E;
+}
+
+.table tr th {
+    border-top: 1px solid #000F00;
+}

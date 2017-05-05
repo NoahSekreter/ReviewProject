@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ReviewProject.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Submit a New Review", "Create")
+</p>
+
+<div class="row">
+@foreach (var item in Model)
+{
+    <div class="col-xs-6 col-md-3">
+        <a href="@Url.Action("Details","Reviews", new { id=item.ID })" class="thumbnail">
+            <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+            <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
+            <p>Reviewer Name Goes Here</p>
+        </a>
+    </div>
+}
+</div>
