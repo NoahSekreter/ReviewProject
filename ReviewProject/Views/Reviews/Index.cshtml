@@ -17,7 +17,7 @@
         <a href="@Url.Action("Details","Reviews", new { id=item.ID })" class="thumbnail">
             <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
             <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
-            <p>Reviewer Name Goes Here</p>
+            <p>@Html.DisplayFor(model => item.Author)</p>
         </a>
     </div>
 }

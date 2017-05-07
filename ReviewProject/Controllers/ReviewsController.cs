@@ -48,7 +48,7 @@ namespace ReviewProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Title,Content,PublishedDate,CategoryID")] Review review)
+        public ActionResult Create([Bind(Include = "ID,Title,Content,Author,PublishedDate,CategoryID")] Review review)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace ReviewProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Title,Content,PublishedDate,CategoryID")] Review review)
+        public ActionResult Edit([Bind(Include = "ID,Title,Content,Author,PublishedDate,CategoryID")] Review review)
         {
             if (ModelState.IsValid)
             {
