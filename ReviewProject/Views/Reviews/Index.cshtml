@@ -13,7 +13,7 @@
 <div class="row">
 @foreach (var item in Model)
 {
-    <div class="col-xs-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-4">
         <a href="@Url.Action("Details","Reviews", new { id=item.ID })" class="thumbnail">
             <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
             <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
