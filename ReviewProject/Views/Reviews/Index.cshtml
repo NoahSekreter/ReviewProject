@@ -13,6 +13,7 @@
 <div class="row">
 @foreach (var item in Model)
 {
+    @* Displays the reviews as thumbnails *@
     <div class="col-xs-12 col-sm-6 col-md-4">
         <a href="@Url.Action("Details","Reviews", new { id=item.ID })" class="thumbnail">
             <h3>@Html.DisplayFor(modelItem => item.Title)</h3>

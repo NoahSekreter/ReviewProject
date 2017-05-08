@@ -71,6 +71,7 @@ a:hover {
     color: #4EFF4E;
 }
 
+/*Wouldn't add unless overriden*/
 tr, td, th {
     border-top: 1px solid #0E0 !important;
 }
